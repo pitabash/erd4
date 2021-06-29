@@ -1,0 +1,60 @@
+/* Enter your custom styles here */
+.input{
+     border: 1px solid black;
+     box-sizing: border-box;
+}
+.input1{
+     border: 2px solid black;
+}
+.form{
+    background-color: aqua;
+}
+.label{
+    font-size: 15px;
+    font: bold;
+    color:blue;
+}
+.title{
+    font-size: 25px;
+    font: bold;
+    margin-left: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+
+}
+.table{
+    margin-top: 20px;
+    background-color: white;
+}
+.label1{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 520px ;
+    font-size: 20px;
+    font: bold;
+    color: red;
+    
+}
+.content{
+    align-content: center;
+}
+.text{
+    font-size: 20px;
+    font: bold;
+}
+.saveButton{
+    color: green;
+    background-color: green;
+    font-size: 20px;
+}
+.resetButton{
+    color: red;
+    background-color:red;
+    font-size: 20px;
+}
+.block1{
+    background-color:black;
+}
+.block2{
+    background-color: yellow;
+}

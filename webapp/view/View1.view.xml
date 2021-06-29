@@ -1,0 +1,193 @@
+<mvc:View xmlns:layout="sap.ui.layout" xmlns:cal="sap.gantt.def.cal" xmlns:unified="sap.ui.unified" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"
+    controllerName="erd4.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}" showHeader="false">
+
+					<content>
+                    <layout:VerticalLayout  width="100%" class="block1" >
+                        <layout:BlockLayout  >
+                            <layout:BlockLayoutRow  >
+                                <layout:BlockLayoutCell width="100%"  >
+                                    <!-- <Text text="Fill Panel Member Details" textAlign="Center" class="title"></Text> -->
+                                    <Title text="Fill Panel Member Details" level="H4" class="title"></Title>
+                                </layout:BlockLayoutCell>
+                            </layout:BlockLayoutRow>
+                        </layout:BlockLayout>
+                    </layout:VerticalLayout>
+
+                    <layout:VerticalLayout  width="100%" class="block2" >
+                        <layout:BlockLayout  >
+                            <layout:BlockLayoutRow  >
+                                <layout:BlockLayoutCell width="100%"  >
+                                    <form:SimpleForm id="idSform" editable="true" >
+                            
+                            <form:content>
+                                <Label text="Geo" class="label" design="Bold" required="true"></Label>
+                                <ComboBox id="idGeo" width="50%" class="input"  >
+                                    <core:Item key="G1" text="G1" />
+                                    <core:Item key="G2" text="G2" />
+                                    <core:Item key="G3" text="G3" />
+                                    <core:Item key="G4" text="G4" />
+                                    <core:Item key="G5" text="G5" />
+                                </ComboBox>
+                                <Label text="Panel Name" class="label" design="Bold" required="true"></Label>
+                                <Input id="idName" width="50%" class="input"></Input>
+                                <Label text="Email Id" class="label" design="Bold" required="true"></Label>
+                                <Input type="Email" id="idEmail" width="50%" class="input" placeholder="pitabash.swain@wipro.com"></Input>
+                                <Label text="Location" class="label" design="Bold" required="true"></Label>
+                                <Input id="idLocation" width="50%" class="input"></Input>
+                                <Label text="Band" class="label" design="Bold" required="true"></Label>
+                                <ComboBox id="idBand" width="50%" class="input">
+                                    <core:Item key="B1" text="B1" />
+                                    <core:Item key="B2" text="B2" />
+                                    <core:Item key="B3" text="B3" />
+                                    <core:Item key="B4" text="B4" />
+                                    <core:Item key="B5" text="B5" />
+                                </ComboBox>
+                                <Label text="Skill" class="label" design="Bold" required="true"></Label>
+                                <ComboBox id="idSkill" width="50%" class="input">
+                                    <core:Item key="ABAP" text="ABAP" />
+                                    <core:Item key="UI5" text="UI5" />
+                                    <core:Item key="FICO" text="FICO" />
+                                    <core:Item key="PIPO" text="PIPO" />
+                                    <core:Item key="HANA" text="HANA" />
+                                </ComboBox>
+                                <Label text="From Date" class="label" design="Bold" required="true"></Label>
+                                <!-- <DatePicker ></DatePicker> -->
+                                <DatePicker id="idDate1" width="50%" class="input"></DatePicker>
+                                <Label text="To Date" class="label" design="Bold" required="true"></Label>
+                                <DatePicker id="idDate2" width="50%" class="input"></DatePicker>
+                                <Label text="From Time" class="label" design="Bold" required="true"></Label>
+                                <ComboBox id="idTime1" width="50%" class="input">
+                                    <core:Item key="ABAP" text="10:00" />
+                                    <core:Item key="UI5" text="10:30" />
+                                    <core:Item key="FICO" text="11:00" />
+                                    <core:Item key="PIPO" text="11:30" />
+                                    <core:Item key="HANA" text="12:00" />
+                                    <core:Item key="ABAP" text="12:30" />
+                                    <core:Item key="UI5" text="01:00" />
+                                    <core:Item key="FICO" text="01:30" />
+                                    <core:Item key="PIPO" text="02:00" />
+                                    <core:Item key="HANA" text="02:30" />
+                                    <core:Item key="ABAP" text="03:00" />
+                                    <core:Item key="UI5" text="03:30" />
+                                    <core:Item key="FICO" text="04:00" />
+                                    <core:Item key="PIPO" text="04:30" />
+                                    <core:Item key="HANA" text="05:00" />
+                                    <core:Item key="UI5" text="05:30" />
+                                    <core:Item key="FICO" text="06:00" />
+                                    <core:Item key="PIPO" text="06:30" />
+                                    <core:Item key="HANA" text="07:00" />
+                                </ComboBox>
+                                <Label text="To Time" class="label" design="Bold" required="true"></Label>
+                                <ComboBox id="idTime2" width="50%" class="input">
+                                    <core:Item key="ABAP" text="10:00" />
+                                    <core:Item key="UI5" text="10:30" />
+                                    <core:Item key="FICO" text="11:00" />
+                                    <core:Item key="PIPO" text="11:30" />
+                                    <core:Item key="HANA" text="12:00" />
+                                    <core:Item key="ABAP" text="12:30" />
+                                    <core:Item key="UI5" text="01:00" />
+                                    <core:Item key="FICO" text="01:30" />
+                                    <core:Item key="PIPO" text="02:00" />
+                                    <core:Item key="HANA" text="02:30" />
+                                    <core:Item key="ABAP" text="03:00" />
+                                    <core:Item key="UI5" text="03:30" />
+                                    <core:Item key="FICO" text="04:00" />
+                                    <core:Item key="PIPO" text="04:30" />
+                                    <core:Item key="HANA" text="05:00" />
+                                    <core:Item key="UI5" text="05:30" />
+                                    <core:Item key="FICO" text="06:00" />
+                                    <core:Item key="PIPO" text="06:30" />
+                                    <core:Item key="HANA" text="07:00" />
+                                </ComboBox>
+                                
+                                
+                                
+                            </form:content>
+                            
+                        </form:SimpleForm>
+                        <Label width="435px"></Label> 
+                        <Button text="Save" type="Accept" press="onSave" width="190px" class="saveButton"></Button>
+                        <Button text="Reset" type="Reject" press="onReset" width="190px" class="resetButton"></Button>
+
+                        
+                                </layout:BlockLayoutCell>
+                            </layout:BlockLayoutRow>
+                        </layout:BlockLayout>
+                    </layout:VerticalLayout>
+                        
+
+                          
+
+                       <Table id="exportTable" inset="false" items="{localModel>/Referral}" 
+                                growing="true" growingThreshold="50" class="table" >
+                    
+                            <headerToolbar>
+                                <OverflowToolbar class="content">
+                                    <ToolbarSpacer />
+                                    <Label text="Saved Panel Member Details"  design="Bold" class="label1" ></Label>
+                                    <ToolbarSpacer />
+                                    <Button icon="sap-icon://delete"  press="onDelete"/>
+                                    <Button icon="sap-icon://excel-attachment" press="onExport"/>
+                                </OverflowToolbar>
+                            </headerToolbar>
+                            <columns>
+                                <Column>
+                                    <Label text="Geo"  design="Bold"/>
+                                </Column>
+                                <Column>
+                                    <Label text="Panel Name" design="Bold" />
+                                </Column>
+                                <Column>
+                                    <Label text="Email Id" design="Bold" />
+                                </Column>
+                                
+                                <Column>
+                                    <Label text="Location" design="Bold" />
+                                </Column>
+                                
+                                <Column >
+                                    <Label text="Band" design="Bold" />
+                                </Column>
+                                <Column>
+                                    <Label text="Skill" design="Bold" />
+                                </Column>
+                                
+                                <Column>
+                                    <Label text="Date" design="Bold"/>
+                                </Column>
+                                <Column>
+                                    <Label text="Time" design="Bold"/>
+                                </Column>
+                                
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{localModel>Geo}" />
+                                        <Text text="{localModel>PanelName}" />
+                                        <Text text="{localModel>EmailId}" />
+                                        <Text text="{localModel>Location}" />
+                                        <Text text="{localModel>Band}" />
+                                        <Text text="{localModel>Skills}" />
+                                        <Text text="{localModel>Date}" />
+                                        <Text text="{localModel>Time}" />
+                                       
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
