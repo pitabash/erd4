@@ -39,7 +39,7 @@
                                 <Label text="Panel Name" class="label" design="Bold" required="true"></Label>
                                 <Input id="idName" width="50%" class="input"></Input>
                                 <Label text="Email Id" class="label" design="Bold" required="true"></Label>
-                                <Input type="Email" id="idEmail" width="50%" class="input" placeholder="pitabash.swain@wipro.com"></Input>
+                                <Input type="Email" id="idEmail" width="50%" class="input" placeholder="mantuswain2014@gmail.com"></Input>
                                 <Label text="Location" class="label" design="Bold" required="true"></Label>
                                 <Input id="idLocation" width="50%" class="input"></Input>
                                 <Label text="Band" class="label" design="Bold" required="true"></Label>
